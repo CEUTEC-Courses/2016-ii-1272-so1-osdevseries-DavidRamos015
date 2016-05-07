@@ -1,0 +1,12 @@
+
+1. Cambiar a la carpeta y usando NASM SHELL Ejecutar:
+nasm -f bin Stage2.asm -o Stage2.bin
+
+2. Crear imagen de disquete en la unidad A usando Virtual Floppy Disk(En modo Admin)
+
+
+3. Cambiar a la carpeta y usando CMD ejecutar el comando para copiar el bootloader al sector 0
+
+   partcopy Stage2.bin 0 200 -f0
+   
+4. Ejecutar bosch 

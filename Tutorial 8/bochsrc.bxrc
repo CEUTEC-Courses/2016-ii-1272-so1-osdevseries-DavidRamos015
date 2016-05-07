@@ -1,0 +1,16 @@
+# ROM and VGA BIOS images ---------------------------------------------
+ 
+romimage:    file= "C:\Program Files\Bochs-2.6.6\BIOS-bochs-latest"
+vgaromimage: file= "C:\Program Files\Bochs-2.6.6\VGABIOS-lgpl-latest"
+ 
+# boot from floppy using our disk image -------------------------------
+ 
+floppya: 1_44=A:, status=inserted  # Boot from drive A
+
+
+ 
+# logging and reporting -----------------------------------------------
+ 
+log:         OSDev.log             # All errors and info logs will output to OSDev.log
+error:       action=report 
+info:        action=report
